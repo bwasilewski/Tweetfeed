@@ -1,0 +1,8 @@
+A plugin created for jQuery that allows you to display a feed of tweets based on parameters that you set.
+
+Example:
+
+$('ELEMENT').tweetfeed({
+	limit : 10,
+	users : ['twitter']
+});
