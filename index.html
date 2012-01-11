@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Tweetfeed: Another jQuery Twitter Plugin</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body">
+
+	<div id="wrap">
+    
+        <div id="main">
+			<div id="leftColumn">
+				<h1>Tweetfeed <span class="smaller">beta</span></h1>
+				<p>A jQuery Plugin by Benjamin Wasilewski</p>
+				<p>Tweetfeed is a plugin created for jQuery that allows you to display a feed of tweets based on preferences that you set.</p>
+				
+				<h2>Usage:</h2>
+				<pre>
+					<code>
+$('ELEMENT').tweetfeed({
+	limit : 10,
+	users : ['twitter']
+});</code>
+				</pre>
+                
+			</div>
+			<div id="rightColumn" class="clearfix"></div>
+            
+            
+        </div> <!-- closes #main -->
+        
+        <div style="clear: both;"></div>
+        
+        <div id="footer">
+            <ul>
+                <li>Copyright &copy; 2011 <a href="http://www.benjaminwasilewski.com">Benjamin Wasilewski</a></li>
+                <li><a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></li>
+            </ul>
+        </div>
+        
+    </div> <!-- closes #wrap -->
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.2.min.js"%3E%3C/script%3E'))</script>
+<script src="js/plugins/jquery.tweetfeed.min.js"></script>
+
+<script>
+	$(function() {
+		$("#rightColumn").tweetfeed({
+			limit : 10,
+			users : ['twitter'],
+			afterMarkup: '<hr />'
+		});
+	});
+</script>
+
+</body>
+</html>
+

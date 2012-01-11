@@ -1,0 +1,169 @@
+h1 {
+	font-size: 36px;
+	margin: 0 0 10px 0;
+	color: #f55656;
+}
+
+	span.smaller { color: #c1c1c1; }
+
+h2 {
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #f55656;
+}
+
+hr {
+	color: #cecece;
+	background-color: #cecece;
+	height: 1px;
+	border: 0px;
+}
+
+p {
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	line-height: 20px;
+	color: #434343;
+}
+
+a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #ed1a4f;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #d14a4a;
+}
+
+li {
+	font-size: 12px;
+	list-style-type: none;
+	color: #434343;
+}
+
+/* ------------------------------------- */
+/* -------->> GENERIC CLASSES <<-------- */
+/* ------------------------------------- */
+
+/* .bold			{ font-weight: bold; }
+.italic			{ font-style: italic; }
+.underline		{ text-decoration: underline; }
+.highlight		{ background: #ffc; }
+.alignLeft		{ text-align: left; }
+.alignRight		{ text-align: right; }
+
+.clear			{ clear: both; }
+.floatRight		{ float: right; }
+.floatLeft		{ float: left; }
+
+.nopadding		{ padding:0; }
+.noindent		{ margin-left:0; padding-left:0; }
+.nobullet		{ list-style:none; list-style-image:none; }
+.smaller		{ font-size: 24px; color: #999; } */
+
+/* ------------------------------------- */
+/* --------->> PAGE STRUCTURE <<-------- */
+/* ------------------------------------- */
+
+
+body {
+	background: white no-repeat; /* fallback for older/unsupporting browsers */
+	background: -moz-linear-gradient(top, #dedede, white 8%) no-repeat;
+	background: -webkit-gradient(linear, 0 0, 0 8%, from(#dedede), to(white)) no-repeat;
+	border-top: 1px solid white;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#main {
+	width: 940px;
+	margin: 80px auto 0px auto;
+}
+
+
+#leftColumn {
+	width: 260px;
+	margin: 0 19px 0 0;
+	float: left;
+	display: block;
+}
+
+	#leftColumn pre {
+		background: #EBEBEB;
+		font-size: 9px;
+	}
+
+	#leftColumn pre code {
+		padding-left: 11px;
+		display: block;
+		color: #666;
+	}
+
+#rightColumn {
+	display: block;
+	float: left;
+	width: 640px;
+	padding: 0 0 0 20px;
+	border-left: 1px solid #e2e2e2;
+}
+
+	#rightColumn li {
+		display: block;
+		font-size: 12px;
+		display: block;
+		padding: 6px;
+		margin-bottom: 5px;
+		list-style-type: none;
+		background: #fafafa;
+		color: #434343;
+		border: 1px solid #e2e2e2;
+	}
+	
+	#rightColumn a.time {
+		font-size: 10px;
+		display: block;
+		width: auto;
+	}
+	
+	#rightColumn li p {
+		margin-bottom: 2px;
+	}
+
+#footer {
+	width: 940px;
+	margin: 100px auto 0;
+}
+
+#footer li {
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+
+/* ------------------------------------- */
+/* ------>> CLEARFIX DEFINITION <<------ */
+/* ------------------------------------- */
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix { 
+	height: 1%;
+}
